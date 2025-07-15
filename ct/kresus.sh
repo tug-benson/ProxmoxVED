@@ -167,7 +167,7 @@ EOF
   pct exec $CTID -- su - kresus -c "mkdir -p /home/kresus/kresus_app"
   pct exec $CTID -- su - kresus -c "npm install --prefix /home/kresus/kresus_app kresus"
   pct exec $CTID -- bash -c "wget https://gitlab.com/woob/woob/-/releases/3.7/downloads/woob_3.7-1_all.deb -O /tmp/woob.deb"
-  pct exec $CTID -- bash -c "dpkg -i /tmp/woob.deb"
+  pct exec $CTID -- bash -c "dpkg -i /tmp/woob.deb || apt-get -f install -y"
   pct exec $CTID -- bash -c "rm /tmp/woob.deb"
   msg_ok "Kresus and Woob installed"
 
@@ -188,7 +188,6 @@ Environment=NODE_ENV=production
 Environment=KRESUS_PYTHON_EXEC=python3
 Environment=KRESUS_DB_TYPE=sqlite
 Environment=KRESUS_DB_SQLITE_PATH=/home/kresus/kresus_app/kresus.sqlite
-Environment=KRESUS_WEBOOB_DIR=/home/kresus/kresus_app/woob
 ExecStart=/usr/bin/node /home/kresus/kresus_app/node_modules/kresus/bin/kresus.js --config /home/kresus/kresus_app/config.ini
 User=kresus
 StandardOutput=journal
@@ -204,7 +203,7 @@ EOF
   msg_ok "Created Service"
 
   msg_info "Customizing Container"
-  pct exec $CTID -- /bin/bash -c "source /dev/stdin <<<\"$FUNCTIONS_FILE_PATH\"; motd_ssh; customize"
+  pct exec $CTID -- bash -c "source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/install.func); motd_ssh; customize"
   msg_ok "Customized Container"
 
   msg_info "Cleaning up"

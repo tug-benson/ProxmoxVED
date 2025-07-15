@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/tug-benson/ProxmoxVED/New-Script-From-TB/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: tteck (https://github.com/tteck)
 # Co-Author: tug-benson

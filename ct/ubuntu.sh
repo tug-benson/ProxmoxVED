@@ -3,7 +3,7 @@ source <(curl -s https://git.community-scripts.org/community-scripts/ProxmoxVED/
 # source <(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVED/raw/branch/main/misc/github.func)
 # Copyright (c) 2021-2025 tteck
 # Author: tteck (tteckster)
-# License: MIT | https://github.com/community-scripts/ProxmoxVED/raw/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/tug-benson/ProxmoxVED/New-Script-From-TB
 # Source: https://ubuntu.com/
 
 echo -e "Loading..."

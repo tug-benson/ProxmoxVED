@@ -2,7 +2,7 @@
 source <(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVED/raw/branch/main/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: bvdberg01 | CanbiZ
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/tug-benson/ProxmoxVED/New-Script-From-TB
 # Source: https://github.com/karlomikus/bar-assistant
 # Source: https://github.com/karlomikus/vue-salt-rim
 # Source: https://www.meilisearch.com/

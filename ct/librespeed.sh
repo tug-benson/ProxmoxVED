@@ -2,7 +2,7 @@
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVED/refs/heads/main/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: elvito
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/tug-benson/ProxmoxVED/New-Script-From-TB
 # Source: https://github.com/librespeed/speedtest
 
 APP="librespeed"

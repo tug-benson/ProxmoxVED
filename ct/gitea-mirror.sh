@@ -2,7 +2,7 @@
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVED/main/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: CrazyWolf13
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/tug-benson/ProxmoxVED/New-Script-From-TB
 # Source: https://github.com/RayLabsHQ/gitea-mirror
 
 APP="gitea-mirror"
